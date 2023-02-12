@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Js in Body</title>
+
+</head>
+<body>
+    <h1>Using Script tag in Head</h1>
+    <p id="hi"> I am unchanged </p>
+    <button onclick="myFunc()">Click here</button>
+
+    <script>
+        function myFunc() {
+            document.getElementById("hi").innerHTML="Paragraph Chnaged.";
+        }
+    </script>
+</body>
+</html>
