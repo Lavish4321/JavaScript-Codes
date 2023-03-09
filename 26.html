@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <button id="one">button#one</button>
+<button id="two">button#two</button>
+<script src="jquery-3.6.3.min.js"></script>
+<script>
+$().ready(function () {
+  $('button#one').click({ text: 'first button' }, handleClick);
+  $('button#two').click({ text: 'second button' }, handleClick);
+});
+
+function handleClick(event) {
+  alert('Clicked on the ' + event.data.text);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Function Chaining</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#clickme").click(function(){
+    $("#p1").css("color", "red")
+      .slideUp(2000)
+      .slideDown(2000);
+  });
+  $("#hide").click(function(){
+    $("#p2").hide("slow", function(){
+      alert("The paragraph is now hidden");
+    });
+  });
+});
+</script>
+</head>
+<body>
+<h1>Function Chaining And Function Call Back</h1>
+<p id="p1">jQuery is fun!!</p>
+
+<button id="clickme">Click me</button>
+<button id="hide">Hide</button>
+
+<p id="p2">This is a paragraph with little content.</p>
+
+
+</body>
+</html>
